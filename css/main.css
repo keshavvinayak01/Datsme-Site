@@ -37,13 +37,6 @@
 }
 /*Horizontal rule*/
 
-hr {
-    color: white;
-    height: 1px;
-    width: 50px;
-    background: white;
-    border-radius: 10px;
-}
 
 
 /*logo*/
@@ -192,12 +185,29 @@ hr {
     margin-bottom:1vw;
 }
 
-#moving-h1{
-
+#phone-h1{
+position:absolute;
+margin-left:50vw;
+margin-top:20vh;
+font-size:350%;  
+font-family: 'Open Sans', sans-serif;
 }
 
+#phone-highlights{
+position:absolute;
+margin-left:50vw;
+margin-top:45vh;
+font-family: 'Open Sans', sans-serif;
+}
 
-/*####movinghorse#####*/
+#phone-paragraph{
+position:absolute;
+margin-left:50vw;
+margin-top:60vh;
+font-size:120%;
+font-family: 'Open Sans', sans-serif;
+}
+
 
 section{
   width: 100%; 
@@ -206,9 +216,11 @@ section{
   background-attachment: fixed; 
   background-repeat: no-repeat;
   margin-right:200px;
+  margin:0px;
+
   }
   
-#a1{background-color: white; background-image: url(../static/edited-phones/phone1.png); height: 600px;}
-#a2{background-color: #15F2D0; background-image: url(../static/edited-phones/phone2.png);height: 600px;}
-#a3{background-color: white; background-image: url(../static/edited-phones/phone-3.png);height: 600px;}
-#a4{background-color: #3FD8D8; background-image: url(../static/edited-phones/phone4.png);height: 600px;}
+#a1{background-color: #ccffb2; background-image: url(../static/phones/phone_5.png);height: 120vh;}
+#a2{background-color: #15F2D0; background-image: url(../static/phones/phone_2.png);height: 120vh;}
+#a3{background-color: #ffff75; background-image: url(../static/phones/phone_3.png);height: 120vh;}
+#a4{background-color: #3FD8D8; background-image: url(../static/phones/phone_4.png);height: 120vh;}
