@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<style>
+
+  #outer {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height:100vh;
+  }
+  #home-top-video:before {
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    z-index:1;
+    background:linear-gradient(to right,rgba(65, 0, 255, 0.4),rgba(255, 0, 232, 0.3));
+  }
+
+  #home-top-video {
+    left: 0%;
+    top: 0%;
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  #home-logo{
+    position: absolute;
+    overflow: hidden;
+    left: 8%;
+    top: 14%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index:1;
+}
+
+  #home-text{
+    position: absolute;
+    overflow: hidden;
+    left:23%;
+    text-align:left;
+    color:white;
+    top: 52%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index:1;
+}
+
+
+</style>
+  <div id="outer">
+    <div id="home-top-video">
+      <video autoplay loop muted width="100%">
+        <source src="static/cafe.mp4" type="video/mp4" /> Your browser does not support the video tag. We suggest you upgrade your browser.
+      </video>
+      <div id="home-logo">
+        <img src="static/logo_round.svg" style="width:15vw;height:15vh;">
+       </div>
+      <div id="home-text" style="font-family: 'Quicksand', sans-serif;font-size: 2.5vw  ;">
+        <h1>Welcome to this<br><b>
+        <div id="fade">
+          Something
+        </div>
+        </b><br>app</h1>
+      </div>
+    </div>
+  </div>
+
+
+<!-- FADING TEXT EFFECT -->
+<script>
+  document.getElementById('fade').innerHTML = 'Hello JavaScript';
+</script>

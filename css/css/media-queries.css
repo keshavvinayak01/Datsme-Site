@@ -1,0 +1,56 @@
+
+/*SELF MADE*/
+@media (max-width:886px){
+	.google {
+		
+		width: 70%;
+
+	}
+	#overlay {
+		height: 130vh;
+	}
+	#home-text{
+		font-size:70%;
+	}
+}
+
+@media (max-width:770px){
+	.google {
+		
+		width: 60%;
+
+	}
+#overlay {
+		height: 80vh;
+	}
+	#home-text{
+		font-size:50%;
+		top:10vh;
+	}
+}
+
+@media (max-width:440px){
+	.google {
+		
+		width: 40%;
+
+
+	}
+	#overlay {
+		height: 80vh;
+	}
+	#home-text{
+		font-size:50%;
+		top:10vh;
+	}
+}
+
+}
+
+
+
+@media (min-width:220px)  {.google {height: 25%;width: auto;}#overlay{height: 60vh;}#home-text{font-size:0%;}}
+@media (min-width:320px)  {.google {height: 40%;width: auto;}#overlay{height: 90vh;}#home-text{font-size:40%;}}
+@media (min-width:481px)  {.google {height: 50%;width: auto;}#overlay{height: 110vh;}#home-text{font-size:50%;}}
+@media (min-width:641px)  {.google {height: 60%;width: auto;}#overlay{height: 130vh;}#home-text{font-size:70%;}}
+@media (min-width:961px)  {.google {height: 70%;width: auto;}#overlay{height: 150vh;}#home-text{font-size:90%;}}
