@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css" href="css/css/media-queries.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/css/particle-e.css">
+
+    <link rel="stylesheet" type="text/css" href="css/feature_cards.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   </head>
   <style>
@@ -29,11 +31,8 @@
     <video autoplay loop muted width="100%" id="main-video">
           <source src="cafe.mp4" type="video/mp4" /> Your browser does not support the video tag. We suggest you upgrade your browser.
         </video>
-         
-         <div id="home-logo">
-          <a href="main.html"><img src="static/logo_round.svg"></a>
-         </div>  
-          
+    <a href="main.html"><img id="logo_main" style="position:absolute;left:-2vw;top:5vh;z-index:2;width:15vw;height:15vh;" src="static/logo_round.svg"></a>
+  
         <div id="home-text" style="font-family: 'Open Sans', sans-serif;">
           
           <h1 id="main-text">Welcome to this<br>
@@ -48,56 +47,92 @@
             <img src="static/google-play-badge.png" class="google" >
             </div>
             <img src="static/phones-side2.png" id="phone1">
-  
+            <div class="social-links">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
 
           <a href="#"><i class="fab fa-linkedin-in"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
+</div>
         </div>
     </div>
 
-
+  
 
 <!-- CARD AREA -->
+<section class="card-container">
+    <article class="card">
+        <header class="card__title">
+            <h1 style="font-size:200%;">Find Friends</h1>
+        </header>
+        <figure class="card__thumbnail">
+            <i class="fas fa-users big-icon users" aria-hidden="true"></i>
+        </figure>
+        <main class="card__description">
+            <p id="cards-p">This app was made keeping in mind the need of people to <b>socialize</b> and <b>communicate</b>, with people like themselves</p> 
+          <button type="button" class="btn btn-primary btn-lg">Learn more</button>
+        </main>
 
+    </article>
+    <article class="card">
+        <header class="card__title">
+            <h1 style="font-size:200%;">User privacy</h1>
+        </header>
+        <figure class="card__thumbnail">
+            <i class="fas fa-user-shield big-icon shield" aria-hidden="true"></i>
+        </figure>
+        <main class="card__description">
+            <p id="cards-p">The data is kept <b>secure</b> and <b>private</b> as per the user's settings, to mantain the highest quality of  user experience.</p> 
+          <button type="button" class="btn btn-success btn-lg" href="#">Learn more</button> 
+        </main>
 
+    </article>
+    <article class="card">
+        <header class="card__title">
+            <h1 style="font-size:200%;">Accurate Matching</h1>
+        </header>
+        <figure class="card__thumbnail">
+            <i class="fas fa-laptop-code big-icon code" aria-hidden="true"></i>
+        </figure>
+        <main class="card__description">
+          <p id="cards-p">Our pair finding algorithm ensures that you find the 
+          <b>perfect</b> friend with the perfect <b>chemistry</b> and perfect <b>like-mindedness.</b></p> 
+          <button type="button" class="btn btn-warning btn-lg" href="#">Learn more</button>
+        </main>
 
+    </article>
+  </section>
+
+<!-- 
     <div class="container main-features">
 
-      <div id="wrapper">
-        <div class="card first">
-          <div class="col" style="display:inline-flex;"><i class="fas fa-users big-icon users" aria-hidden="true"></i></div>
-          <div class="container-card">
+        <div class="card">
+          <div class="col"><i class="fas fa-users big-icon users" aria-hidden="true"></i></div>
           <h2 align="center" style="font-size:180%">Find Friends</h2> 
-          <p style="font-size:140%;">This app was made keeping in mind the need of people to <b>socialize</b> and <b>communicate</b>, with people like themselves</p> 
+          <p id="cards-p">This app was made keeping in mind the need of people to <b>socialize</b> and <b>communicate</b>, with people like themselves</p> 
           <button type="button" class="btn btn-primary btn-lg" href="#">Learn more</button>
-          </div>
+
         </div>
       
 
-        <div class="card second">
-          <div class="col" style="display:inline-flex;"><i class="fas fa-user-shield big-icon shield" aria-hidden="true"></i></div>
-          <div class="container-card">
+        <div class="card">
+          <div class="col"><i class="fas fa-user-shield big-icon shield" aria-hidden="true"></i></div>
           <h2 align="center" style="font-size:180%">User privacy</h2> 
-          <p style="font-size:140%;">The data is kept <b>secure</b> and <b>private</b> as per the user's settings, to mantain the highest quality of  user experience.</p> 
+          <p id="cards-p">The data is kept <b>secure</b> and <b>private</b> as per the user's settings, to mantain the highest quality of  user experience.</p> 
           <button type="button" class="btn btn-success btn-lg" href="#">Learn more</button>
-          </div>
-        </div>
-
-        <div class="card third">
-          <div class="col" style="display:inline-flex;"><i class="fas fa-laptop-code big-icon code" aria-hidden="true"></i></div>
-          <div class="container-card">
-          <h2 align="center" style="font-size:180%">Accurate matching</h2> 
-          <p style="font-size:140%;">Our pair finding algorithm ensures that you find the 
-          <b>perfect</b> friend with the perfect <b>chemistry</b> and perfect <b>like-mindedness.</b></p> 
-          <button type="button" class="btn btn-warning btn-lg" href="#">Learn more</button>
           
         </div>
 
+        <div class="card">
+          <div class="col"><i class="fas fa-laptop-code big-icon code" aria-hidden="true"></i></div>
+          <h2 align="center" style="font-size:180%">Accurate matching</h2> 
+          <p id="cards-p">Our pair finding algorithm ensures that you find the 
+          <b>perfect</b> friend with the perfect <b>chemistry</b> and perfect <b>like-mindedness.</b></p> 
+          <button type="button" class="btn btn-warning btn-lg" href="#">Learn more</button>
+          
+        
       </div>      
-      </div>
-    </div>
+      </div> -->
 <script src="js/main.js"></script>
 
 
@@ -109,7 +144,8 @@
 <div id="particles-js">
 <h1 style="font-size:300%;position:absolute;z-index:-20;font-weight:1000px;color:white;margin-left:10vw;margin-right:10vw;margin-top:20vh;font-family: 'Open Sans', sans-serif;">Meet shockingly compatible people in your area!
     <br>
-  <p style="font-size:50%;color:white;margin-top:20vh;margin-bottom:30vh;">Datsme enables you to find, explore, and meet the unexpected. It has the capability to change your small world into something that is worth remembering, that is worth cherishing. 
+
+  <p id="particle-p" style="font-size:50%;color:white;margin-top:20vh;margin-bottom:30vh;">Datsme enables you to find, explore, and meet the unexpected. It has the capability to change your small world into something that is worth remembering, that is worth cherishing. 
 And this definitely makes it worth a try.<a href='#'style="margin-left:35%;margin-right:30%;z-index: 20;"><button type="button" class="btn btn-secondary btn-lg">Know more</button></a></p>
 </h1></div>
 

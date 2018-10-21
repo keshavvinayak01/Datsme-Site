@@ -1,0 +1,21 @@
+.card-container {
+    display: grid;
+    /*padding: 1rem;*/
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    font-family: 'Open Sans', sans-serif;
+    margin-top:10vh;
+    grid-gap: 1rem;
+}
+.card {
+    display: grid;
+    /*min-width:10vw;*/
+    /*width:200%%;*/
+    text-align:center;
+    margin-top:10vh;
+    min-height: 70vh;
+}
+.card .button {
+    align-self: end;
+}
+
+

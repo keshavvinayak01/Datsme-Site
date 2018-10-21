@@ -20,9 +20,7 @@
 		 <div align="right">
 		<button type="button" class="btn btn-info btn-lg" style="margin:1.5vw;">Download</button>
 		</div>
-		<div id="home-logo">
-          <a href="../main.html"><img src="../static/logo_round.svg"></a>
-         </div>
+    <a href="../main.html"><img style="position:absolute;left:-2vw;top:5vh;z-index:2;width:15vw;height:15vh;" src="../static/logo_round.svg"></a>
          <h1 id="main-text" align="center">About us<h2 style="font-size:180%;color:white;"align="center">What is Datsme and why use it</h2></h1><br><br>
 		 <div align="center">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -33,7 +31,7 @@
 	</div>
 <br><br>
 <!-- MAIN BODY -->
-<div style="background-image: url(../static/background_two.jpg);min-height:130vh;width:100%;">
+<div>
       <h1 align="center" style="padding-top:2vh;color:white;font-size:350%;"><b>Flip the cards to get your answers!</b></h1>
       <ul class="small-block-grid-2 medium-block-grid-3 flip-cards">
 
@@ -116,7 +114,7 @@ Just smile, because you now have the right companion Just by your side!</p>
 
       </ul>
     </div>
-<div class="container" style="margin-top:28vh;"align="center">
+<div class="container" style="margin-top:130vh;"align="center">
   <h1 id="big-heading" style="color:black!important;">With Datsme, we are changing the world, by changing <b>your</b> world.</h1>
   <hr style="width:7%;background:black;border-radius:5px;height:2px;" align="center">
   <h1 id="big-heading" style="font-size:160%;">Get started with Datsme</h1>
@@ -394,6 +392,7 @@ li{
 		width: 50%;
 		/*height: 160px;*/
 	}
+
 }
 @media only screen and ( max-width: 30em ) {
 	.hero-unit h1 {
@@ -402,6 +401,7 @@ li{
 	.hero-unit h3 {
 		font-size: 1.125rem;
 	}
+
 }
 @media only screen and ( max-width: 25em ) {
 	.hero-unit {
@@ -411,27 +411,24 @@ li{
 		margin: 2rem 0;
 	}
 	.hero-unit h1 {
-		font-size: 1.35rem;
+		font-size: 1rem;
 		padding-bottom: 0.25rem;
 	}
 	.hero-unit h3 {
-		font-size: 0.85rem;
+		font-size: 0.5rem;
 	}
 	.hero-unit .card-icon {
-		font-size: 1.35rem;
+		font-size: 1rem;
 	}
 	.hero-unit .card-back .card-icon {
-		font-size: 2rem;
+		font-size: 1rem;
 		margin: 0;
 		padding: 5px 0 20px 5px;
 	}
 	.flip-cards li {
 		width: 100%;
 		font-size: 1.35rem;
-		height: 120px;
-	}
-	.flip-cards .panel p {
-		display: none;	
+		height: 200px;
 	}
 	.flip-cards .panel small {
 		margin: 0;
@@ -440,8 +437,12 @@ li{
 		padding: 2rem;
 	}
 	.button.large a {
-		font-size: 1.35rem;
+		font-size: 1rem;
 	}
+
+  .container{
+    margin-top:0px;
+  }
 }
 </style>
 </body>

@@ -1,7 +1,7 @@
 .container-team{
 background-image: url(../static/background_team.png);
 width:100%;
-z-index:-1;
+z-index:10;
 min-height:95vh;
 position:relative;
 
