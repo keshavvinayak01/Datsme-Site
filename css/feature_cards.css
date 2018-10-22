@@ -13,6 +13,9 @@
     text-align:center;
     margin-top:10vh;
     min-height: 70vh;
+    background:url(../static/connectwork.png);
+    color:white;
+    font-weight:900;
 }
 .card .button {
     align-self: end;
