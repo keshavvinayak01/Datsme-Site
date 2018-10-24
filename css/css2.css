@@ -1,14 +1,10 @@
-body{
-	font-family: 'Open Sans', sans-serif;
-}
 
 
 .container-custom{
 background: linear-gradient(60deg, rgba(65, 0, 255, 0.4) 20%, rgba(255, 0, 232, 0.3));
 width:100%;
-
 min-height:90vh;
-position:relative;
+/*position:relative;*/
 
 }
 
@@ -18,7 +14,6 @@ position:relative;
 	margin:0px;
 	padding-top:20vh;
 	color:white;
-
 }
 
 p{

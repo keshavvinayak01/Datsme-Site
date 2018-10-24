@@ -106,9 +106,4 @@ position:relative;
 	margin-left: 1vw;
 }
 
-.fab2 {
-    font-size:2.5vh!important;
-
-    width: 3.4vw!important;
-    border-radius: 20vw!important;
-}
+.fab2{font-size:2.5vh!important;width: 3.4vw!important;border-radius: 20vw!important;}

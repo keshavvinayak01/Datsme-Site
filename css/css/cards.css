@@ -1,16 +1,20 @@
 
 .row.no-gutters {
-  margin: -5px !important;
+  margin: 50vw !important;
+  margin-right: 5vw!important;
+  margin-left: 5vw!important;
 }
 
 .row.no-gutters > * {
   padding: 5px !important;
+  margin-right: 5vw!important;
+  margin-left: 5vw!important;
 }
 
 .flipper {
   height: 0;
   padding-bottom: 100%;
-  position: relative;
+  position: absolute;
   -webkit-perspective: 800px;
   -ms-perspective: 800px;
   perspective: 800px;
