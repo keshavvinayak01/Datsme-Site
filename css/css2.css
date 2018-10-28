@@ -1,7 +1,7 @@
 
 
 .container-custom{
-background: linear-gradient(60deg, rgba(65, 0, 255, 0.4) 20%, rgba(255, 0, 232, 0.3));
+background-image:url(../static/about_us3.png);
 width:100%;
 min-height:90vh;
 /*position:relative;*/
