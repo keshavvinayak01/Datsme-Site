@@ -2,7 +2,7 @@
 background-image: url(../static/background_team.png);
 width:100%;
 z-index:10;
-min-height:95vh;
+min-height:95vh!important;
 position:relative;
 
 }

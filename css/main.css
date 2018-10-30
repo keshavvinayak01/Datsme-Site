@@ -34,9 +34,9 @@
 }
 
 #main-text {
-    font-size: 410%;
+    font-size: 500%;
     font-weight:550;
-    margin-top:;
+    /*margin-top:;*/
 }
 /*Horizontal rule*/
 
@@ -218,18 +218,19 @@ section{
 
   }
   
-#a1{background-color: #f4f4f4;background-image: url(../static/phones-new2/location_phone.png);height: 105vh;}
-#a2{background-color: white; background-image: url(../static/phones-new2/PHONE31.png);height: 105vh;}
-#a3{background-color: #f4f4f4;background-image: url(../static/phones-new2/PHONE41.png);height: 105vh;}
-#a4{background-color: white; background-image: url(../static/phones-new2/PHONE11.png);height: 105vh;}
+#a1{background-color: #f4f4f4;background-image: url(../screens/location3.png);height: 150vh;}
+#a2{background-color: white; background-image: url(../screens/compatibility.png);height: 120vh;}
+#a3{background-color: #f4f4f4;background-image: url(../screens/ask_what_matters.png);height: 120vh;}
+#a4{background-color: white; background-image: url(../screens/chat.png);height: 120vh;}
 
 
 #big-heading{
-    font-size:250%;
+    font-size:300%;
     font-family: 'Quicksand', sans-serif;
     font-weight:100;
     max-width: 70vw;
     margin-left:14vw;
+    margin-top:20vh;
 
 }
 
@@ -281,6 +282,7 @@ a:hover{
 .container{
     margin:0px!important;
     padding-left:0px;
+    margin-top:20vh;
 }
 .container section{
     max-height:90vh;

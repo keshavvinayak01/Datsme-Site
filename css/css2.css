@@ -3,11 +3,32 @@
 .container-custom{
 background-image:url(../static/about_us3.png);
 width:100%;
+max-height:100vh;
 min-height:90vh;
 /*position:relative;*/
 
 }
+@media (min-width:1100px) {
+	.container-custom{
+		min-height:90vh!important;
+	}
+	#main-text2{
+		padding-top:20vh!important;
+		font-size:150%!important;
+	}
+}
 
+
+
+@media (min-width:768px ) {
+	.container-custom{
+		min-height:50vh;
+	}
+	#main-text2{
+		padding-top:5vh!important;
+		font-size:250%!important;
+	}
+}
 #main-text{
 	font-size:470%;
 	font-weight:500;
