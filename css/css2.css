@@ -1,7 +1,9 @@
 
 
 .container-custom{
-background-image:url(../static/about_us3.png);
+background-image:url(../static/howitworks.png);
+background-repeat:no-repeat!important;
+background-size:auto!important;
 width:100%;
 max-height:100vh;
 min-height:90vh;

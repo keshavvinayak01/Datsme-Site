@@ -4,6 +4,8 @@ width:100%;
 z-index:10;
 min-height:95vh!important;
 position:relative;
+background-repeat:no-repeat!important;
+background-size:auto!important;
 
 }
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
