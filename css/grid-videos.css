@@ -1,0 +1,88 @@
+
+:root {
+  --yellow: #ffc600;
+  --black: #272727;
+}
+.grid-image{
+	width:100%;
+}
+    .container-grid {
+    	overflow:hidden;
+    margin-top:5vw;
+      display: grid;
+      grid-template-columns:35vw 15vw 15vw 15vw;
+      grid-template-areas: 
+      "content imageLeft imageCurr imageRight";
+      background: #f4f4f4;
+ }
+ 	#one{
+	grid-area:imageLeft;
+ 	}
+ 	#two{
+	grid-area:imageCurr;
+ 	}
+ 	#three{
+	grid-area:imageRight;
+ 	}
+
+.content{
+	grid-area:content;
+	padding:15vw;
+	padding-left:5vw;
+	padding-right:1vw;
+	font-size:150%;
+}
+
+	.item {
+  /* We center the contents of these items. You can also do this with flexbox too! */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+  font-size: 35px;
+  background-color: var(--yellow); /* best colour */
+}
+
+.hidden-img{
+	display:none!important;
+}
+
+.grid-image{
+
+	border-radius:2%;
+	opacity:0.8;
+	display:grid;
+	margin-top:100px;
+	width:550px;
+	/*height:500px;*/
+	transition : transform 0.5s,opacity 0.7s;
+	-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+	overflow:hidden!important;
+	z-index:1;
+	transform: scale(0.7);
+}
+.hover-image{
+	opacity:0.5;
+	transform: scale(0.8);
+}
+@media(max-width:700px){
+	.grid-image{width:150px;}
+	.container-grid{
+	grid-template-columns:30vw 30vw 30vw 20vw;
+	grid-template-areas: 
+	"imageLeft imageCurr imageRight some-image"
+	"content content content content"
+	}
+	.grid-image{width:220px;}
+	.content{margin-top:2vh;}
+}
+
+
+.active-image{
+	opacity:1;
+	transform:scale(1);
+	z-index:100;
+
+	/*border: 5px solid #a8467c;*/
+}

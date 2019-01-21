@@ -7,32 +7,42 @@
       Datsme: A friend finder app
     </title>
       <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#3E3E49"/>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- ICON -->
-  <link rel="icon" sizes="57x57" href="static/main_logo_final.png">
-  <!-- ICON OVER -->
-    <link rel="stylesheet" type="text/css" href="css/changing_gradient.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/css/media-queries.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/css/particle-e.css">
-    <link rel="stylesheet" type="text/css" href="css/css/buttons.css">
-    <link rel="stylesheet" type="text/css" href="css/feature_cards.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="icon" sizes="57x57" href="static/main_logo_final.png">
+  <link rel="stylesheet" type="text/css" href="css/changing_gradient.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/css/media-queries.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="css/css/particle-e.css">
+  <link rel="stylesheet" type="text/css" href="css/css/buttons.css">
+  <link rel="stylesheet" type="text/css" href="css/feature_cards.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/grid-videos.css" type="text/css">
   </head>
   
   <body style="margin:0px!important;font-family:'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;">
+  <nav id="main">
+    <ul>
+      <!-- <li class="logo"><a href="#">Main</a></li> -->
+      <img alt="datsme" style="position:absolute;left:8vw;top:1vh;z-index:2;width:50px;height:50px;" src="static/datsme_logo_top_bar.png">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li><button class="download-button" style="border-radius:100px;margin:1vw 5vw 3vw;background:#6471ed;color:white;padding:8px 15px;border:none;" type="button" class="btn info"><b style="font-size:80%;font-weight:0;">Download Now</b></button></li>
+
+    </ul>
+  </nav>
   
 <!-- /*MAIN OVERLAY AREA*/ -->
  <div class="mobile-top">
-     <div class="effect" style="width:100%;height:16vh"><a href="index.html"><img alt="datsme" style="position:absolute;left:50vw;top:1vh;z-index:2;width:60px;height:60px;" src="static/white_blank_logo.png"></a></div>
+     <!-- <div class="effect" style="width:100%;height:16vh"><a href="index.html"><img alt="datsme" style="position:absolute;left:10vw;top:1vh;z-index:2;width:60px;height:60px;" src="static/white_blank_logo.png"></a></div> -->
 <div id="main-top" style="background-image: url(static/main.png);min-height:100vh;">
  
          <h1 id="main-text" align="left" style="color:white;padding-top:20vh;margin-top:0px!important;">Welcome to this <br> <span class="span" style="font-family:'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;">
@@ -128,7 +138,16 @@
     </article>
   </section>
 
-
+<!-- VIDEO GRID AREA  -->
+  <div class="container-grid">
+    <h1 class="grid-h1">Tap to know more!</h1>
+    <div class="content"><b>Ye dosti hum nahi todenge.. D</b>atsme is here for you to
+    help you make strong bonds with people who share the same opinions and likes as you</div>
+    <video id="one" class="grid-image" data-key=1 src="videos/video1.mp4" autoplay></video>
+    <video id="two" class="grid-image" data-key=2  src="videos/video2.mp4" autoplay></video>
+    <video id="three" class="grid-image" data-key=3 src="videos/video3.mp4" autoplay></video>
+    <video id="four" class="grid-image hidden-img" data-key=4  src="videos/video4.mp4" autoplay></video>
+  </div>
 <!-- PARTICLE EFFECT AREA -->
 
 <div id="particles-js">
@@ -222,22 +241,50 @@ Simply say hi, and see the change in the way you communicate. We help you find a
   </div>
 </b>
 </div>
-<div id="footer-2" class="copyright" style="width:117%;font-size:70%;color:white;background:linear-gradient(to right,rgba(100,113,237,1),rgba(201,113,235,1) 150%);padding-top:15px;padding-bottom:15px;padding-left:50px;">©️ Different Angle 42 Pvt. Ltd.</div>
+<div id="footer-2" class="copyright" style="font-size:70%;color:white;background:linear-gradient(to right,rgba(100,113,237,1),rgba(201,113,235,1) 150%);padding-top:15px;padding-bottom:15px;padding-left:50px;">©️ Different Angle 42 Pvt. Ltd.</div>
 
 <script src="js/smooth_scroll.js"></script>
 <script src="js/main.js"></script>
 <script src="js/particle-e.js"></script>
+<script src="js/grid-videos.js"></script>
 <script>
+  sections = Array.from(document.querySelectorAll('section'));
+  sections = sections.slice(1);
+
+  // console.log(sections)
   function ChangeWidth(){
     var width_new = document.getElementById('particles-js').offsetWidth;
-    document.getElementById('a1').style.width = width_new + 'px';
-    document.getElementById('a2').style.width = width_new + 'px';
-    document.getElementById('a3').style.width = width_new + 'px';
-    document.getElementById('a4').style.width = width_new + 'px';
     document.getElementById('footer').style.width = width_new + 'px';
     document.getElementById('footer-2').style.width = width_new + 'px';
+    sections.forEach(section =>{
+      section.style.width = width_new + 'px';
+    });
   };
   setInterval(ChangeWidth,1);
 </script>
+<style>
+@media(max-width:500px){
+
+  .download-button{
+    margin:3vw 5vw 3vw!important;
+    border-radius:100px;
+    padding:2px 30px!important;
+  }
+}
+  .grid-h1{
+    position:absolute!important;margin: 8vh 0vw 0vw 5vw!important;
+}
+@media(max-width:500px){
+    .grid-h1{margin-left:15vw!important;font-size:210%;}
+    .grid-image{margin-top:200px;}
+
+}
+@media(max-width:411px){
+  .grid-h1{margin-left:20vw!important;font-size:210%;}
+}
+button{
+  transition: all 0.5s;
+}
+</style>
 </body>
 </html>
